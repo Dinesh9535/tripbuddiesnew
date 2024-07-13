@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "companions",
+  "info": {
+    "singularName": "companion",
+    "pluralName": "companions",
+    "displayName": "Companions",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Age": {
+      "type": "integer"
+    },
+    "Mobile": {
+      "type": "biginteger",
+      "min": "10"
+    },
+    "Photourl": {
+      "type": "string"
+    },
+    "Gender": {
+      "type": "string"
+    },
+    "FoodChoice": {
+      "type": "string"
+    }
+  }
+}

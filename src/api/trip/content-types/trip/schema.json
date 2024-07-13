@@ -1,0 +1,115 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trips",
+  "info": {
+    "singularName": "trip",
+    "pluralName": "trips",
+    "displayName": "Trips",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "tripimage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Bike",
+        "Treks",
+        "Hiking",
+        "Bagpackingtrips",
+        "Beachtours"
+      ]
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "cost": {
+      "type": "biginteger"
+    },
+    "state": {
+      "type": "enumeration",
+      "enum": [
+        "Andhra Pradesh",
+        "Arunachal Pradesh",
+        "Assam",
+        "Bihar",
+        "Chhattisgarh",
+        "Goa",
+        "Gujarat",
+        "Haryana",
+        "Himachal Pradesh",
+        "Jharkhand",
+        "Karnataka",
+        "Kerala",
+        "Madhya Pradesh",
+        "Maharashtra",
+        "Manipur",
+        "Meghalaya",
+        "Mizoram",
+        "Nagaland",
+        "Odisha",
+        "Punjab",
+        "Rajasthan",
+        "Sikkim",
+        "Tamil Nadu",
+        "Telangana",
+        "Tripura",
+        "Uttar Pradesh",
+        "Uttarakhand",
+        "West Bengal"
+      ]
+    },
+    "included": {
+      "type": "customField",
+      "options": [
+        "Flight bookings",
+        "Airport transfers",
+        "Culinary tours",
+        "Travel SIM cards and Wi-Fi hotspots",
+        "Wellness and spa services",
+        ""
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "startdate": {
+      "type": "datetime"
+    },
+    "enddate": {
+      "type": "datetime"
+    },
+    "activities": {
+      "type": "customField",
+      "options": [
+        "Backpacking",
+        "Hiking",
+        "Scubadiving",
+        "Skydiving",
+        "Rafting",
+        "Ziplining"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "queries": {
+      "type": "blocks"
+    }
+  }
+}
