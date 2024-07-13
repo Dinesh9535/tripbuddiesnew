@@ -27,10 +27,8 @@ jobs:
       - name: Create deployment artifact
         run: |
           mkdir deploy
-          cp -r * deploy
-          cp -r .next deploy
-          cp -r public deploy
-          cp package*.json deploy
+          shopt -s extglob
+          cp -r !(deploy) deploy
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
